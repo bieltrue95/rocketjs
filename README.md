@@ -1,5 +1,5 @@
 # rocketjs
-Estudo de Java Script pela Rocketseat
+Estudo de Java Script pela Rocketseat....
  
  <!-- Conceitos 
    //Objetos
