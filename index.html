@@ -1,17 +1,20 @@
 <html>
 
-<head>
+ <head>
     <meta charset="UTF-8">
     <title>Curso Java Script</title>
-</head>
-<body>
-    <script>
-function exibeAlgo (){
-    console.log ('Hello World')
-}
-setTimeout (exibeAlgo(), 5000);
+ </head>
 
-    </script>
-</body>
+  <body>
+
+    <div id="app">
+       <input onkeypress="mostraAlerta()" />
+
+     <script>
+        function mostraAlerta() {
+            alert('Botão foi clicado');
+        }
+     </script>
+  </body>
 
 </html>
