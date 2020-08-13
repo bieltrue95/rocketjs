@@ -6,22 +6,28 @@
 </head>
 
 <body>
-
    <div id="app">
-      <input type="text" name="nome" />
-    
+      <input id="nome" />
+ 
+   </div>
 
-      <button class="botão">Adicionar</button>
-      <script>
-         var inputElement = document.querySelector('input[name=nome]');
-         var btnElement = document.querySelector('button.botão');
+   <script>
+      var linkElement = document.createElement('a');
+      linkElement.setAttribute('href', 'http://rocketseat.com.br');
+      linkElement.setAttribute('title', 'Site da Rocketseat');
 
-         btnElement.onclick= function() {
-            var text  = inputElement.value;
-             alert(text);
-         }
-         console.log(inputElement);
-      </script>
-   </body>
+
+      var textElement = document.createTextNode('Acessar site da Rocketseat');
+
+      var textElement = document.createTextNode('Acessar site da Rocketseat');
+      linkElement.appendChild(textElement);
+
+      var containerElement = document.querySelector('#app')
+      containerElement.appendChild(linkElement);
+
+      var inputElement = document.querySelector('#nome')
+      containerElement.removeChild(inputElement);
+   </script>
+</body>
 
 </html>
