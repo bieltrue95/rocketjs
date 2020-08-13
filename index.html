@@ -9,16 +9,19 @@
 
    <div id="app">
       <input type="text" name="nome" />
-      <input type="text" name="nome2" />
+    
 
       <button class="botão">Adicionar</button>
-
-
-
       <script>
-         var inputElement = document.querySelectorAll('input)
+         var inputElement = document.querySelector('input[name=nome]');
+         var btnElement = document.querySelector('button.botão');
+
+         btnElement.onclick= function() {
+            var text  = inputElement.value;
+             alert(text);
+         }
          console.log(inputElement);
       </script>
-</body>
+   </body>
 
 </html>
